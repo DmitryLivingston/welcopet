@@ -2,33 +2,24 @@
     box-sizing: border-box
     padding: 0
     margin: 0
-body
-    font-family:
 img
     max-width: 100%
 .clearfix:after
     content: ""
     display: table
     clear: both
-.first_product_couple
-    background-color: red
-    min-height: 850px
-
 
 .second_product_couple
     background-color: yellow
     min-height: 850px
 
-
 .how_use
     background-color: #c9c9c9
     min-height: 850px
 
-
 .where_bay
     background-color: grey
     min-height: 850px
-
 
 .feedback_form
     background-color: orange
@@ -38,11 +29,31 @@ img
     background-color: #F8F8F8
     z-index: 1
 h1,h2
-    +title 
+    +title
 h2
-    text-transform: uppercase    
+    text-transform: uppercase
 .orange
     color: $orange
-
-
-
+.round_button
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 85px
+    width: 85px
+    border-radius: 50%
+    border: 1px solid #000
+    box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.25)
+    background-color: #fff
+.round_links
+    width: 220px
+    // text-align: end
+    a
+        font-family: 'Bahnschrift'
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 100%
+        text-transform: uppercase
+        text-decoration: none
+        text-align: center
