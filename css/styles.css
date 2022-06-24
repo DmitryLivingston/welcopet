@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("../fonts/Bahnschrift.ttf");
+  font-family: "Proxima Nova";
+  src: url("../fonts/proxima/ProximaNova-Light.eot");
+  src: url("../fonts/proxima/ProximaNova-Light.ttf");
+  src: url("../fonts/proxima/ProximaNova-Light.woff");
+  src: url("../fonts/proxima/ProximaNova-Regular.eot");
+  src: url("../fonts/proxima/ProximaNova-Regular.ttf");
+  src: url("../fonts/proxima/ProximaNova-Regular.woff");
+  src: url("../fonts/proxima/ProximaNova-Bold.eot");
+  src: url("../fonts/proxima/ProximaNova-Bold.ttf");
+  src: url("../fonts/proxima/ProximaNova-Bold.woff");
+  src: url("../fonts/proxima/ProximaNova-Extrabld.eot");
+  src: url("../fonts/proxima/ProximaNova-Extrabld.ttf");
+  src: url("../fonts/proxima/ProximaNova-Extrabld.woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.first_product_couple {
+  background-color: red;
+  min-height: 850px;
+}
+
+.second_product_couple {
+  background-color: yellow;
+  min-height: 850px;
+}
+
+.how_use {
+  background-color: #c9c9c9;
+  min-height: 850px;
+}
+
+.where_bay {
+  background-color: grey;
+  min-height: 850px;
+}
+
+.feedback_form {
+  background-color: orange;
+  min-height: 850px;
+}
+
+.sidebar {
+  background-color: #F8F8F8;
+  z-index: 1;
+}
+
+h1, h2 {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 68px;
+  color: #090A29;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.orange {
+  color: #FF8F00;
+}
+
+.prime_left_side {
+  padding-top: 67px;
+}
+
+.prime_logo-img {
+  max-width: 113px;
+}
+
+.prime_title {
+  max-width: 626px;
+  padding-top: 90px;
+  padding-bottom: 34px;
+}
+
+.prime_text {
+  max-width: 626px;
+  margin-bottom: 80px;
+  font-family: "Bahnschrift", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #090A29;
+}
+
+.prime_button_block {
+  max-width: 350px;
+}
+
+.prime_img {
+  position: relative;
+}
+
+.prime_bg_img {
+  height: 100%;
+}
+
+.prime_text_img {
+  position: absolute;
+  bottom: 50px;
+  right: 69px;
+  color: #EAEAEA;
+}
+
+.prime_btn_violet {
+  background-color: #8E679E;
+  border-radius: 46px;
+  color: #fff;
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 14px 26px;
+}
+
+.prime_button_block {
+  margin-bottom: 27px;
+}
+
+.about {
+  background: url("../img/dog.png") bottom no-repeat;
+  background-size: contain;
+}
+
+.about_title {
+  margin-top: 154px;
+  margin-bottom: 43px;
+}
+
+.about_text {
+  max-width: 626px;
+  margin-bottom: 125px;
+  font-family: "Bahnschrift", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #090A29;
+}
+
+.about_text p {
+  margin-bottom: 2rem;
+}
+
+.about_button_block {
+  max-width: 340px;
+}
+
+.about_bg_img {
+  height: 100%;
+}
+
+.antistress {
+  background: radial-gradient(46.42% 59.05% at 61.63% 24.44%, rgba(135, 10, 177, 0.91) 0%, #B780CA 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 41%, 0 99%);
+  height: 780px;
+}
+
+.antistress_img {
+  max-width: 645px;
+  padding-top: 13px;
+  margin-left: -27px;
+}
