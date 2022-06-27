@@ -2,6 +2,7 @@
   font-family: "Bahnschrift";
   src: url("../fonts/Bahnschrift.ttf");
 }
+
 @font-face {
   font-family: "Proxima Nova";
   src: url("../fonts/proxima/ProximaNova-Light.eot");
@@ -17,6 +18,7 @@
   src: url("../fonts/proxima/ProximaNova-Extrabld.ttf");
   src: url("../fonts/proxima/ProximaNova-Extrabld.woff");
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -31,21 +33,6 @@ img {
   content: "";
   display: table;
   clear: both;
-}
-
-.second_product_couple {
-  background-color: yellow;
-  min-height: 850px;
-}
-
-.how_use {
-  background-color: #c9c9c9;
-  min-height: 850px;
-}
-
-.where_bay {
-  background-color: grey;
-  min-height: 850px;
 }
 
 .feedback_form {
@@ -83,7 +70,6 @@ h2 {
   height: 85px;
   width: 85px;
   border-radius: 50%;
-  border: 1px solid #000;
   box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
@@ -91,8 +77,9 @@ h2 {
 .round_links {
   width: 220px;
 }
+
 .round_links a {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -105,17 +92,21 @@ h2 {
 .prime_left_side {
   padding-top: 67px;
 }
+
 .prime_logo {
   padding-left: 15px;
 }
+
 .prime_logo-img {
   width: 113px;
 }
+
 .prime_title {
   max-width: 626px;
   padding-top: 90px;
   padding-bottom: 34px;
 }
+
 .prime_text {
   max-width: 626px;
   margin-bottom: 80px;
@@ -127,21 +118,26 @@ h2 {
   letter-spacing: 0.03em;
   color: #090A29;
 }
+
 .prime_button_block {
   max-width: 350px;
 }
+
 .prime_img {
   position: relative;
 }
+
 .prime_bg_img {
   height: 100%;
 }
+
 .prime_text_img {
   position: absolute;
   bottom: 50px;
   right: 69px;
   color: #EAEAEA;
 }
+
 .prime_btn_violet {
   background-color: #8E679E;
   border-radius: 46px;
@@ -153,6 +149,7 @@ h2 {
   line-height: 22px;
   padding: 14px 26px;
 }
+
 .prime_button_block {
   margin-bottom: 27px;
 }
@@ -161,10 +158,12 @@ h2 {
   background: url("../img/dog.png") bottom no-repeat;
   background-size: contain;
 }
+
 .about_title {
   margin-top: 154px;
   margin-bottom: 43px;
 }
+
 .about_text {
   max-width: 626px;
   margin-bottom: 125px;
@@ -176,12 +175,15 @@ h2 {
   letter-spacing: 0.03em;
   color: #090A29;
 }
+
 .about_text p {
   margin-bottom: 2rem;
 }
+
 .about_button_block {
   max-width: 340px;
 }
+
 .about_bg_img {
   height: 100%;
 }
@@ -192,16 +194,19 @@ h2 {
   height: 780px;
   margin-bottom: -468px;
 }
+
 .antistress_img {
   padding-top: 10px;
   margin-left: -30px;
   width: 100%;
 }
+
 .antistress_img_wrap {
   max-width: 645px;
 }
+
 .antistress_title h1 {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -210,8 +215,9 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
+
 .antistress_title h3 {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -219,8 +225,9 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .antistress_text {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -230,9 +237,11 @@ h2 {
   max-width: 624px;
   margin-top: 43px;
 }
+
 .antistress .round_links {
   margin-top: 58px;
 }
+
 .antistress .round_links a {
   color: #a875b9;
 }
@@ -242,21 +251,25 @@ h2 {
   clip-path: polygon(0 52%, 100% 0%, 100% 100%, 0% 100%);
   height: 879px;
 }
+
 .kidney_img {
   margin-top: 172px;
   margin-left: 20px;
   width: 100%;
 }
+
 .kidney_img_wrap {
   max-width: 614px;
 }
+
 .kidney_title {
   margin-top: 372px;
   margin-left: 112px;
   text-align: end;
 }
+
 .kidney_title h1 {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -265,8 +278,9 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
+
 .kidney_title h3 {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -274,8 +288,9 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .kidney_text {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -285,12 +300,15 @@ h2 {
   margin-top: 33px;
   text-align: end;
 }
+
 .kidney_content {
   padding-right: 67px;
 }
+
 .kidney .round_links {
   margin-top: 40px;
 }
+
 .kidney .round_links a {
   color: #0C8583;
 }
@@ -299,14 +317,16 @@ h2 {
   background: radial-gradient(55.94% 62.95% at 62.74% 19.89%, rgba(11, 73, 152, 0.93) 0%, #4D80C1 100%);
   clip-path: polygon(0 0, 100% 0, 100% 46%, 0 99%);
   height: 869px;
-  margin-bottom: -468px;
+  margin-bottom: -470px;
 }
+
 .skin_img {
   padding-top: 122px;
   width: 100%;
 }
+
 .skin_title h1 {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -315,8 +335,9 @@ h2 {
   color: #FFFFFF;
   margin-top: 59px;
 }
+
 .skin_title h3 {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -325,8 +346,9 @@ h2 {
   color: #FFFFFF;
   margin-top: 16px;
 }
+
 .skin_text {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -336,35 +358,42 @@ h2 {
   max-width: 788px;
   margin-top: 43px;
 }
+
 .skin .round_links {
   margin-top: 58px;
 }
+
 .skin .round_links a {
   color: #a875b9;
 }
+
 .skin_contain {
   padding-left: 3%;
 }
 
 .joints {
-  background: radial-gradient(31.46% 31.46% at 69.06% 36.18%, #0C8583 0%, #045E5C 100%);
-  clip-path: polygon(0 52%, 100% 0%, 100% 100%, 0% 100%);
-  height: 879px;
+  background: radial-gradient(80.49% 64.27% at 68.37% 24.76%, #00722C 0%, #28B35D 100%);
+  clip-path: polygon(0 49%, 100% 0%, 100% 100%, 0% 100%);
+  height: 939px;
 }
+
 .joints_img {
-  margin-top: 172px;
-  margin-left: 20px;
+  margin-top: 284px;
+  margin-left: 150px;
   width: 100%;
 }
+
 .joints_img_wrap {
   max-width: 494px;
 }
+
 .joints_title {
   margin-top: 412px;
   text-align: end;
 }
+
 .joints_title h1 {
-  font-family: "Proxima Nova";
+  font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -373,8 +402,9 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
+
 .joints_title h3 {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -382,8 +412,9 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .joints_text {
-  font-family: "Bahnschrift";
+  font-family: 'Bahnschrift';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -392,13 +423,99 @@ h2 {
   color: #FFFFFF;
   margin-top: 33px;
   text-align: end;
+  max-width: 717px;
 }
+
 .joints_content {
   padding-right: 67px;
 }
+
 .joints .round_links {
   margin-top: 40px;
 }
+
 .joints .round_links a {
   color: #0C8583;
+}
+
+.how_use_img {
+  height: 873px;
+  width: 812px;
+  object-fit: contain;
+}
+
+.how_use_instruction {
+  margin-top: 7rem;
+}
+
+.how_use_instruction img {
+  width: 630px;
+  height: 208px;
+  object-fit: contain;
+}
+
+.how_use_content {
+  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 88px;
+}
+
+.how_use_title {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 68px;
+  color: #090A29;
+  text-transform: uppercase;
+  max-width: 811px;
+}
+
+.how_use_text {
+  font-family: "Bahnschrift", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #090A29;
+  margin-top: 2rem;
+  max-width: 630px;
+}
+
+.where_bay {
+  padding-bottom: 60px;
+}
+
+.where_bay_title {
+  margin-top: 169px;
+  margin-bottom: 94px;
+}
+
+.where_bay_title h1 {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 68px;
+  color: #090A29;
+  text-transform: uppercase;
+}
+
+.where_bay_item {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 68px;
+  color: #090A29;
+  text-transform: uppercase;
+  background-color: #eee;
+  margin-bottom: 40px;
+  height: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(9, 10, 41, 0.5);
 }
