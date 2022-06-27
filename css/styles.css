@@ -1,28 +1,47 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Bahnschrift";
+  src: local("Bahnschrift");
   src: url("../fonts/Bahnschrift.ttf");
 }
-
 @font-face {
   font-family: "Proxima Nova";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Proxima Nova");
   src: url("../fonts/proxima/ProximaNova-Light.eot");
   src: url("../fonts/proxima/ProximaNova-Light.ttf");
   src: url("../fonts/proxima/ProximaNova-Light.woff");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Proxima Nova");
   src: url("../fonts/proxima/ProximaNova-Regular.eot");
   src: url("../fonts/proxima/ProximaNova-Regular.ttf");
   src: url("../fonts/proxima/ProximaNova-Regular.woff");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Proxima Nova");
   src: url("../fonts/proxima/ProximaNova-Bold.eot");
   src: url("../fonts/proxima/ProximaNova-Bold.ttf");
   src: url("../fonts/proxima/ProximaNova-Bold.woff");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Proxima Nova");
   src: url("../fonts/proxima/ProximaNova-Extrabld.eot");
   src: url("../fonts/proxima/ProximaNova-Extrabld.ttf");
   src: url("../fonts/proxima/ProximaNova-Extrabld.woff");
 }
-
-* {
+*, *::before, *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 img {
@@ -33,11 +52,6 @@ img {
   content: "";
   display: table;
   clear: both;
-}
-
-.feedback_form {
-  background-color: orange;
-  min-height: 850px;
 }
 
 .sidebar {
@@ -77,9 +91,8 @@ h2 {
 .round_links {
   width: 220px;
 }
-
 .round_links a {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -89,24 +102,33 @@ h2 {
   text-align: center;
 }
 
+/* 1 – Изменим стили шрифтов */
+/* 2 – Удалим margin в Firefox и Safari */
+input[type=text] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.scroll-button {
+  position: absolute;
+}
+
 .prime_left_side {
   padding-top: 67px;
 }
-
 .prime_logo {
   padding-left: 15px;
 }
-
 .prime_logo-img {
   width: 113px;
 }
-
 .prime_title {
   max-width: 626px;
   padding-top: 90px;
   padding-bottom: 34px;
 }
-
 .prime_text {
   max-width: 626px;
   margin-bottom: 80px;
@@ -118,26 +140,21 @@ h2 {
   letter-spacing: 0.03em;
   color: #090A29;
 }
-
 .prime_button_block {
   max-width: 350px;
 }
-
 .prime_img {
   position: relative;
 }
-
 .prime_bg_img {
   height: 100%;
 }
-
 .prime_text_img {
   position: absolute;
   bottom: 50px;
   right: 69px;
   color: #EAEAEA;
 }
-
 .prime_btn_violet {
   background-color: #8E679E;
   border-radius: 46px;
@@ -149,7 +166,6 @@ h2 {
   line-height: 22px;
   padding: 14px 26px;
 }
-
 .prime_button_block {
   margin-bottom: 27px;
 }
@@ -158,12 +174,10 @@ h2 {
   background: url("../img/dog.png") bottom no-repeat;
   background-size: contain;
 }
-
 .about_title {
   margin-top: 154px;
   margin-bottom: 43px;
 }
-
 .about_text {
   max-width: 626px;
   margin-bottom: 125px;
@@ -175,15 +189,12 @@ h2 {
   letter-spacing: 0.03em;
   color: #090A29;
 }
-
 .about_text p {
   margin-bottom: 2rem;
 }
-
 .about_button_block {
   max-width: 340px;
 }
-
 .about_bg_img {
   height: 100%;
 }
@@ -194,19 +205,16 @@ h2 {
   height: 780px;
   margin-bottom: -468px;
 }
-
 .antistress_img {
   padding-top: 10px;
   margin-left: -30px;
   width: 100%;
 }
-
 .antistress_img_wrap {
   max-width: 645px;
 }
-
 .antistress_title h1 {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -215,9 +223,8 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
-
 .antistress_title h3 {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -225,9 +232,8 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .antistress_text {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -237,11 +243,9 @@ h2 {
   max-width: 624px;
   margin-top: 43px;
 }
-
 .antistress .round_links {
   margin-top: 58px;
 }
-
 .antistress .round_links a {
   color: #a875b9;
 }
@@ -251,25 +255,21 @@ h2 {
   clip-path: polygon(0 52%, 100% 0%, 100% 100%, 0% 100%);
   height: 879px;
 }
-
 .kidney_img {
   margin-top: 172px;
   margin-left: 20px;
   width: 100%;
 }
-
 .kidney_img_wrap {
   max-width: 614px;
 }
-
 .kidney_title {
   margin-top: 372px;
   margin-left: 112px;
   text-align: end;
 }
-
 .kidney_title h1 {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -278,9 +278,8 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
-
 .kidney_title h3 {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -288,9 +287,8 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .kidney_text {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -300,15 +298,12 @@ h2 {
   margin-top: 33px;
   text-align: end;
 }
-
 .kidney_content {
   padding-right: 67px;
 }
-
 .kidney .round_links {
   margin-top: 40px;
 }
-
 .kidney .round_links a {
   color: #0C8583;
 }
@@ -319,14 +314,12 @@ h2 {
   height: 869px;
   margin-bottom: -470px;
 }
-
 .skin_img {
   padding-top: 122px;
   width: 100%;
 }
-
 .skin_title h1 {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -335,9 +328,8 @@ h2 {
   color: #FFFFFF;
   margin-top: 59px;
 }
-
 .skin_title h3 {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -346,9 +338,8 @@ h2 {
   color: #FFFFFF;
   margin-top: 16px;
 }
-
 .skin_text {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -358,15 +349,12 @@ h2 {
   max-width: 788px;
   margin-top: 43px;
 }
-
 .skin .round_links {
   margin-top: 58px;
 }
-
 .skin .round_links a {
   color: #a875b9;
 }
-
 .skin_contain {
   padding-left: 3%;
 }
@@ -376,24 +364,20 @@ h2 {
   clip-path: polygon(0 49%, 100% 0%, 100% 100%, 0% 100%);
   height: 939px;
 }
-
 .joints_img {
   margin-top: 284px;
   margin-left: 150px;
   width: 100%;
 }
-
 .joints_img_wrap {
   max-width: 494px;
 }
-
 .joints_title {
   margin-top: 412px;
   text-align: end;
 }
-
 .joints_title h1 {
-  font-family: 'Proxima Nova';
+  font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 65px;
@@ -402,9 +386,8 @@ h2 {
   color: #FFFFFF;
   margin-top: 58px;
 }
-
 .joints_title h3 {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -412,9 +395,8 @@ h2 {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-
 .joints_text {
-  font-family: 'Bahnschrift';
+  font-family: "Bahnschrift", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -425,15 +407,12 @@ h2 {
   text-align: end;
   max-width: 717px;
 }
-
 .joints_content {
   padding-right: 67px;
 }
-
 .joints .round_links {
   margin-top: 40px;
 }
-
 .joints .round_links a {
   color: #0C8583;
 }
@@ -443,23 +422,19 @@ h2 {
   width: 812px;
   object-fit: contain;
 }
-
 .how_use_instruction {
   margin-top: 7rem;
 }
-
 .how_use_instruction img {
   width: 630px;
   height: 208px;
   object-fit: contain;
 }
-
 .how_use_content {
   margin-left: 6rem;
   margin-top: 4rem;
   margin-bottom: 88px;
 }
-
 .how_use_title {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
@@ -470,7 +445,6 @@ h2 {
   text-transform: uppercase;
   max-width: 811px;
 }
-
 .how_use_text {
   font-family: "Bahnschrift", sans-serif;
   font-style: normal;
@@ -486,13 +460,11 @@ h2 {
 .where_bay {
   padding-bottom: 60px;
 }
-
 .where_bay_title {
   margin-top: 169px;
   margin-bottom: 94px;
 }
-
-.where_bay_title h1 {
+.where_bay_title h2 {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -501,7 +473,6 @@ h2 {
   color: #090A29;
   text-transform: uppercase;
 }
-
 .where_bay_item {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
@@ -518,4 +489,186 @@ h2 {
   justify-content: center;
   text-align: center;
   color: rgba(9, 10, 41, 0.5);
+  overflow: hidden;
+  word-spacing: 5px;
+}
+
+.feedback_title {
+  max-width: 697px;
+}
+.feedback_title h2 {
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #090A29;
+  text-transform: inherit;
+}
+.feedback_subtitle {
+  font-family: "Bahnschrift", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  color: #090A29;
+  max-width: 597px;
+  text-align: center;
+  margin-top: 38px;
+}
+.feedback_form {
+  margin-top: 38px;
+  max-width: 620px;
+  width: 100%;
+}
+.feedback_text_area_group {
+  margin-top: 60px;
+}
+.feedback_dropdown {
+  margin: 0 auto 35px 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.feedback_dropdown_wrap {
+  margin-top: 60px;
+}
+.feedback_dropdown_text {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0070E2;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0070E2;
+  margin-left: 5px;
+}
+.feedback .social {
+  margin-bottom: 200px;
+  margin-top: 53px;
+}
+.feedback .social_wrap {
+  max-width: 220px;
+  width: 100%;
+}
+.feedback .social_wrap a {
+  width: 40px;
+  height: 40px;
+}
+.feedback #dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.feedback .form-check {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #868686;
+  display: flex;
+  align-items: center;
+}
+.feedback .form-check input {
+  width: 22px;
+  height: 22px;
+}
+.feedback .form-check label {
+  margin-left: 7px;
+}
+.feedback .btn.btn-primary {
+  background-color: #FF8F00;
+  border: none;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.105em;
+  color: #FFFFFF;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 21px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+
+.text-field__textarea, .text-field__input {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #46494A;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: unset;
+  border-bottom: 1px solid #46494A;
+  border-radius: unset;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-field {
+  margin-bottom: 1rem;
+  min-width: 260px;
+}
+.text-field__label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #757575;
+}
+.text-field__input::placeholder {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #46494A;
+}
+.text-field__input:focus-visible {
+  outline: unset;
+}
+.text-field__textarea {
+  height: 42px;
+}
+.text-field__textarea::placeholder {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7C7C7C;
+}
+.text-field__textarea:focus-visible {
+  outline: unset;
+}
+
+footer {
+  min-height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #46494A;
 }

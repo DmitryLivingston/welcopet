@@ -1,17 +1,12 @@
-*
+*, *::before, *::after
     box-sizing: border-box
-    padding: 0
-    margin: 0
+
 img
     max-width: 100%
 .clearfix:after
     content: ""
     display: table
     clear: both
-.feedback_form
-    background-color: orange
-    min-height: 850px
-
 .sidebar
     background-color: #F8F8F8
     z-index: 1
@@ -43,3 +38,13 @@ h2
         text-transform: uppercase
         text-decoration: none
         text-align: center
+/* 1 – Изменим стили шрифтов */
+/* 2 – Удалим margin в Firefox и Safari */
+input[type="text"]
+    font-family: inherit
+    font-size: inherit
+    line-height: inherit
+    margin: 0
+.scroll-button
+    position: absolute
+    
