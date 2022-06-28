@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title></title>
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<title>Welco</title>
+	<meta name="description" content="Welco - источник полезных пребиотических волокон, которые способствуют восстановлению полезной микрофлоры в кишечнике, улучшая пищеварение и помогая полноценно усваивать питательные вещества из пищи." />
+	<meta name="keywords" content="пребиотик, питомцы, животные, лекарство, питание" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 
 	<!-- <script src="js/jquery-1.9.1.min.js"></script>	 -->
-	<!--script src="http://code.jquery.com/jquery-1.9.1.min.js"></script-->
+	<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
 
 	<!--[if lt IE 9]>
 		  <script src="js/html5.js"></script>
@@ -29,12 +29,13 @@
 		<div class="row">
 			<div class="col-11 px-0">
 				<main>
-					<section class="prime">
+					<!-- первый экран -->
+					<section class="prime position-relative">
 						<div class="row m-0">
 							<div class="col-12 col-lg-5 offset-lg-1 px-3">
 								<div class="prime_left_side">
 									<div class="prime_logo">
-										<img class="prime_logo-img" src="/img/welco_logo 1.png" alt="">
+										<img class="prime_logo-img" src="/img/welco_logo 1.png" alt="логотип компании вэлкопэт">
 									</div>
 									<div class="prime_title">
 										<h1>Натуральный <span class="orange">пребиотик в виде лакомства</span> для
@@ -46,7 +47,7 @@
 											инфекций</span>
 									</div>
 									<div class="prime_button_block d-flex align-items-center justify-content-between">
-										<img src="/img/Untitled-1 2.png" alt="" class="pb-3">
+										<img src="/img/Untitled-1 2.png" alt="три пауча вэлкопэт" class="pb-3">
 										<div class="prime_button">
 											<div class="btn prime_btn_violet">
 												Купить Welco
@@ -58,14 +59,18 @@
 							<div class="col-12 col-lg-6 px-0">
 								<div class="prime_right_side h-100">
 									<div class="prime_img h-100">
-										<img src="/img/Prime.png" alt="" class="prime_bg_img">
-										<img src="/img/prime-text.png" alt="" class="prime_text_img">
+										<img src="/img/Prime.png" alt="изображение двух пачек товара велкопэт для кошек и собак на оранжевом фоне" class="prime_bg_img">
+										<img src="/img/prime-text.png" alt="текст-подпись к изображению товаров неполноценный корм лакомство пребиотик не является лекарственным средством" class="prime_text_img">
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="scroll-button">
+							<a id="about-scroll-btn" href="#about"><img src="/img/chevron down.png" alt="кнопка листать вниз"></a>
+						</div>
 					</section>
-					<section class="about">
+					<!-- секция зачем жиаотным пребиотики -->
+					<section class="about position-relative" id="about">
 						<div class="row mx-0">
 							<div class="col offset-lg-1">
 								<div class="about_wrap">
@@ -111,14 +116,15 @@
 
 						</div>
 					</section>
-					<section class="first_product_couple">
+					<!-- первый блок с продукцией -->
+					<section class="first_product_couple position-relative" id="first_product_couple">
 						<div class="antistress">
 							<div class="row m-0">
 								<div class="col offset-1 px-0">
 									<div class="row m-0">
 										<div class="col-5 px-0">
 											<div class="antistress_img_wrap">
-												<img src="/img/antistress2.png" alt="" class="antistress_img">
+												<img src="/img/antistress2.png" alt="два товара вэлкопэт для кошек и собак антистресс" class="antistress_img">
 											</div>
 										</div>
 										<div class="col-7 px-0">
@@ -131,10 +137,11 @@
 												обеспечивают снижение уровня стресса и помогают животным стать спокойнее
 												и счастливее.
 											</p>
+											<!-- кнопки -->
 											<div class="round_links d-flex justify-content-between">
 												<a href="" class="round_button pt-2">состав <br><i
 														class="fa-solid fa-plus"></i> </a>
-												<a href="" class="round_button">где <br> купить <br><i
+												<a href="#where_bay" class="round_button">где <br> купить <br><i
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
@@ -161,13 +168,13 @@
 											<div class="round_links d-flex justify-content-between">
 												<a href="" class="round_button pt-2">состав <br><i
 														class="fa-solid fa-plus"></i> </a>
-												<a href="" class="round_button">где <br> купить <br><i
+												<a href="#where_bay" class="round_button">где <br> купить <br><i
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
 										<div class="col-6 px-0 h-100">
 											<div class="kidney_img_wrap">
-												<img src="/img/kidney.png" alt="" class="kidney_img">
+												<img src="/img/kidney.png" alt="коробка товара вэлкопэт здоровые почки для кошек" class="kidney_img">
 											</div>
 										</div>
 									</div>
@@ -175,16 +182,16 @@
 								</div>
 							</div>
 						</div>
-
 					</section>
-					<section class="second_product_couple">
+					<!-- второй блок с продукцией -->
+					<section class="second_product_couple position-relative" id="second_product_couple">
 						<div class="skin">
 							<div class="row m-0">
 								<div class="col px-0">
 									<div class="d-flex">
 										<div class="">
 											<div class="skin_img_wrap">
-												<img src="/img/skin.png" alt="" class="skin_img">
+												<img src="/img/skin.png" alt="два товара вэлкопэт здоровая кожа и блестящая шерсть для собак" class="skin_img">
 											</div>
 										</div>
 										<div class="skin_contain">
@@ -202,7 +209,7 @@
 											<div class="round_links d-flex justify-content-between">
 												<a href="" class="round_button pt-2">состав <br><i
 														class="fa-solid fa-plus"></i> </a>
-												<a href="" class="round_button">где <br> купить <br><i
+												<a href="#where_bay" class="round_button">где <br> купить <br><i
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
@@ -229,13 +236,13 @@
 											<div class="round_links d-flex justify-content-between">
 												<a href="" class="round_button pt-2">состав <br><i
 														class="fa-solid fa-plus"></i> </a>
-												<a href="" class="round_button">где <br> купить <br><i
+												<a href="#where_bay" class="round_button">где <br> купить <br><i
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
 										<div class="col-6 px-0 h-100">
 											<div class="joints_img_wrap">
-												<img src="/img/joints.png" alt="" class="joints_img">
+												<img src="/img/joints.png" alt="коробка товара вэлкопэт здоровые суставы для собак" class="joints_img">
 											</div>
 										</div>
 									</div>
@@ -244,11 +251,12 @@
 							</div>
 						</div>
 					</section>
-					<section class="how_use">
+					<!-- секция как применять -->
+					<section class="how_use position-relative" id="how_use">
 						<div class="row m-0">
 							<div class="col-6 px-0">
 								<div class="how_use_img_wrap w-100">
-									<img src="/img/how-use.png" alt="" class="how_use_img w-100 h-100">
+									<img src="/img/how-use.png" alt="ряд из серых паучей с логотипом велкопэт" class="how_use_img w-100 h-100">
 								</div>
 							</div>
 							<div class="col-6 px-0">
@@ -266,13 +274,14 @@
 										кормлением.
 									</p>
 									<div class="how_use_instruction">
-										<img src="/img/how-use-instruction.png" alt="">
+										<img src="/img/how-use-instruction.png" alt="инструкция по использованию корма велкопэт">
 									</div>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section class="where_bay">
+					<!-- секция где купить -->
+					<section class="where_bay position-relative" id="where_bay">
 						<div class="row m-0">
 							<div class="col-10 offset-1 px-0">
 								<div class="row m-0">
@@ -317,7 +326,8 @@
 							</div>
 						</div>
 					</section>
-					<section class="feedback">
+					<!-- секция с формой и соцсетями -->
+					<section class="feedback" id="feedback">
 						<div class="row m-0">
 							<div class="col-12 d-flex flex-column align-items-center">
 								<div class="feedback_title">
@@ -354,10 +364,10 @@
 											<div class="col-8">
 												<div class="feedback_dropdown">
 													<input type="file" id="dropdown" name="dropdown" accept="image/png, image/jpeg, image/jpg">
-													<img src="/img/Shape.svg" alt="стилизоанное синее облако с белой стрелкой внутри">
+													<img src="/img/Shape.svg" alt="стилизованное синее облако с белой стрелкой внутри">
 													<span class="feedback_dropdown_text">Прикрепить файл в формате JPG. JPEG. PNG</span>
 												</div>
-												<div class="form-check mb-0">
+												<div class="form-check mb-0 d-flex align-items-center">
 													<input class="form-check-input shadow-none mt-0" type="checkbox" value="" id="flexCheckDefault">
 													<label class="form-check-label" for="flexCheckDefault">Принимаю условия <a href="#">Политики конфиденциальности</a></label>
 												</div>
@@ -390,29 +400,68 @@
 					</section>
 				</main>
 			</div>
+			<!-- сайдбар -->
 			<div class="col-1 px-0">
 				<aside class="sidebar h-100">
 					<div class="d-flex flex-column flex-shrink-0">
-						сайдбар
+						<div class="sidebar_menu">
+							<div class="sidebar_menu__menu"><a href="#" data-bs-toggle="modal" data-bs-target="#modalMenu"><img src="/img/меню.svg" alt="три полоски с надписью меню"></a></div>
+							<div class="sidebar_menu__consultation"><a href="#feedback"><img src="/img/консультация.svg" alt="значок диалога с надписью консультация врача"></a></div>
+							<div class="sidebar_menu__wherebay"><a href="#where_bay"><img src="/img/где купить.svg" alt="значок сумочки с надписью где купить"></a></div>
+						</div>
 					</div>
 				</aside>
 			</div>
-
 		</div>
 	</div>
-<div class="scroll-button">
-	<img src="/img/chevron down.png" alt="">
-</div>
-	<footer>
-		<span>Copyright© ООО «Апиценна» 1991-2020. Все права защищены. Карта сайта. Поисковое продвижение.</span>
-	</footer>
 
+	<footer>
+		<span>Copyright© ООО «Апиценна» 1991-<script>document.write(new Date().getFullYear());</script>. Все права защищены. <a href="">Карта сайта</a>. <a href="">Поисковое продвижение</a>.</span>
+
+<!-- Modal -->
+<div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="modalMenuLabel" aria-hidden="true">
+	<div class="modal-dialog modal-fullscreen">
+	  <div class="modal-content">
+		<div class="modal-body p-0">
+		  <div class="row m-0">
+			<div class="col-11 px-0">
+				<div class="row">
+					<div class="col-6"><img src="/img/modal-dog.png" alt="собака лежит на полу и смотрит вверх на логотип вэлкопэт" class="h-100 w-100 modal_menu_img"></div>
+					<div class="col-6">
+						<div class="d-flex justify-content-center">
+							<div class="modal_menu_text">
+								<h3><a href="#about" data-bs-dismiss="modal" id="modal-menu-why">Зачем нужны пребиотики?</a></h3>
+								<h3><a data-bs-dismiss="modal" href="#first_product_couple">Продукты</a></h3>
+								<h3><a data-bs-dismiss="modal" href="#how_use">Как применять</a></h3>
+								<h3><a data-bs-dismiss="modal" href="#where_bay">Где купить Welco</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1 h-100 px-0">
+				<div class="modal-sidebar">
+					<div class="sidebar_menu__close d-flex flex-column align-items-center">
+						<button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+						<span>Меню</span>
+					</div>
+					<div class="sidebar_menu__consultation"><a href="#feedback"><img src="/img/консультация.svg" alt="значок диалога с надписью консультация врача"></a></div>
+					<div class="sidebar_menu__wherebay"><a href="#where_bay"><img src="/img/где купить.svg" alt="значок сумочки с надписью где купить"></a></div>
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
 </script>
-<script src="/js/sidebars.js"></script>
+<!-- <script src="/js/sidebars.js"></script> -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-	integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="/js/script.js"></script>
 </body>
 
 </html>

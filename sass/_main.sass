@@ -1,6 +1,10 @@
 *, *::before, *::after
     box-sizing: border-box
-
+html
+    scroll-behavior: smooth
+@media screen and (prefers-reduced-motion: reduce)
+    html
+        scroll-behavior: auto
 img
     max-width: 100%
 .clearfix:after
@@ -28,7 +32,6 @@ h2
     background-color: #fff
 .round_links
     width: 220px
-    // text-align: end
     a
         font-family: 'Bahnschrift'
         font-style: normal
@@ -38,13 +41,9 @@ h2
         text-transform: uppercase
         text-decoration: none
         text-align: center
-/* 1 – Изменим стили шрифтов */
-/* 2 – Удалим margin в Firefox и Safari */
 input[type="text"]
     font-family: inherit
     font-size: inherit
     line-height: inherit
     margin: 0
-.scroll-button
-    position: absolute
-    
+
