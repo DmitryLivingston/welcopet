@@ -43,15 +43,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
 img {
   max-width: 100%;
 }
@@ -71,7 +62,7 @@ h1, h2 {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 68px;
   color: #090A29;
 }
@@ -152,10 +143,19 @@ input[type=text] {
   height: 100%;
   width: 100%;
 }
-.prime_text_img {
+.prime_img_text {
   position: absolute;
   bottom: 50px;
   left: 83px;
+  color: #fff;
+  max-width: 750px;
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(9, 10, 41, 0.36);
 }
 .prime_btn_violet {
   background-color: #8E679E;
@@ -170,6 +170,7 @@ input[type=text] {
 }
 .prime_button_block {
   margin-bottom: 27px;
+  flex-wrap: wrap;
 }
 .prime .scroll-button {
   position: absolute;
@@ -211,6 +212,11 @@ input[type=text] {
   bottom: 0;
 }
 
+@media screen and (max-width: 425px) {
+  .about_text {
+    font-size: 16px;
+  }
+}
 .antistress {
   background: radial-gradient(46.42% 59.05% at 61.63% 24.44%, rgba(135, 10, 177, 0.91) 0%, #B780CA 100%);
   clip-path: polygon(0 0, 100% 0, 100% 41%, 0 99%);
@@ -229,7 +235,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -277,14 +283,14 @@ input[type=text] {
 }
 .kidney_title {
   margin-top: 372px;
-  margin-left: 112px;
+  margin-left: 110px;
   text-align: end;
 }
 .kidney_title h1 {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -340,7 +346,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -398,7 +404,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 100%;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -463,7 +469,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 68px;
   color: #090A29;
   text-transform: uppercase;
@@ -486,6 +492,14 @@ input[type=text] {
   bottom: 0px;
 }
 
+@media screen and (max-width: 425px) {
+  .how_use_content {
+    margin-left: 10px;
+  }
+  .how_use_text {
+    font-size: 16px;
+  }
+}
 .where_bay {
   padding-bottom: 60px;
 }
@@ -497,7 +511,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 68px;
   color: #090A29;
   text-transform: uppercase;
@@ -506,7 +520,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 65px;
+  font-size: 3.4vw;
   line-height: 68px;
   color: #090A29;
   text-transform: uppercase;
@@ -529,7 +543,7 @@ input[type=text] {
   font-family: "Proxima Nova", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 2.4vw;
   line-height: 100%;
   text-align: center;
   color: #090A29;
@@ -764,4 +778,133 @@ footer a:hover {
 .modal_menu_text h3 a:hover {
   text-decoration: underline;
   color: #0067DF;
+}
+
+.answers_img {
+  height: 708px;
+  object-fit: cover;
+}
+.answers_content {
+  margin-left: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 88px;
+}
+.answers .carousel-item {
+  height: 708px;
+}
+.answers_container {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.answers_item {
+  max-width: 500px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#modalAntistress {
+  color: #065580;
+}
+#modalAntistress .modal-dialog {
+  max-width: 1700px;
+  max-height: 840px;
+  height: 100%;
+  width: 100%;
+  background-color: #9671A4;
+}
+#modalAntistress .modal-content {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+#modalAntistress .modal-header {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 88px;
+}
+#modalAntistress .modal-title {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 7vh;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+#modalAntistress .modal-subtitle {
+  padding-left: 62px;
+}
+#modalAntistress .modal-subtitle, #modalAntistress h6 {
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+#modalAntistress h6 {
+  margin-bottom: 11px;
+}
+#modalAntistress .modalAmount {
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  padding-left: 62px;
+}
+#modalAntistress .modal_antistress_img {
+  max-width: 604px;
+  max-height: 470px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+#modalAntistress .btn-close {
+  align-self: self-start;
+}
+#modalAntistress .modalAntistressImgWrap {
+  padding-left: 35px;
+}
+#modalAntistress table th {
+  padding-bottom: 12px;
+}
+#modalAntistress table td:first-child {
+  width: 187px;
+}
+#modalAntistress .modalAntistress_bottom_text {
+  font-family: "Bahnschrift";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #DEDEDE;
+  margin-top: 32px;
+  max-width: 800px;
+}
+#modalAntistress .modalAntistress_left {
+  border-right: 1px solid rgba(6, 85, 128, 0.5);
+}
+#modalAntistress .micro-table {
+  margin-top: 41px;
+}
+#modalAntistress .nutrition_value_table {
+  margin-bottom: 135px;
+}
+#modalAntistress .modalAntistress_text {
+  max-width: 563px;
+  margin-bottom: 33px;
+}
+#modalAntistress .modalAntistress_right {
+  padding-left: 63px;
 }

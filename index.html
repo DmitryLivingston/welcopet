@@ -15,8 +15,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 
-	<!-- <script src="js/jquery-1.9.1.min.js"></script>	 -->
-	<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+	<script src="js/jquery-1.9.1.min.js"></script>	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 	<!--[if lt IE 9]>
 		  <script src="js/html5.js"></script>
@@ -49,9 +49,9 @@
 									<div class="prime_button_block d-flex align-items-center justify-content-between">
 										<img src="/img/Untitled-1 2.png" alt="три пауча вэлкопэт" class="pb-3">
 										<div class="prime_button">
-											<div class="btn prime_btn_violet">
+											<a href="#" class="btn prime_btn_violet" data-bs-toggle="modal" data-bs-target="#modalAntistress">
 												Купить Welco
-											</div>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -60,17 +60,18 @@
 								<div class="prime_right_side h-100">
 									<div class="prime_img h-100">
 										<img src="/img/Prime.png" alt="изображение двух пачек товара велкопэт для кошек и собак на оранжевом фоне" class="prime_bg_img">
-										<img src="/img/prime-text.png" alt="текст-подпись к изображению товаров неполноценный корм лакомство пребиотик не является лекарственным средством" class="prime_text_img">
+										<!-- <img src="/img/prime-text.png" alt="текст-подпись к изображению товаров неполноценный корм лакомство пребиотик не является лекарственным средством" class="prime_text_img d-none d-lg-block"> -->
+										<span class="prime_img_text">Неполнорационный корм (лакомство-пребиотик). не является лекарственным средством.</span>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="scroll-button">
-							<a id="about-scroll-btn" href="#about"><img src="/img/chevron down.png" alt="кнопка листать вниз"></a>
+							<a href="#about" id="about-scroll-btn"><img src="/img/chevron down.png" alt="кнопка листать вниз"></a>
 						</div>
 					</section>
-					<!-- секция зачем жиаотным пребиотики -->
-					<section class="about position-relative" id="about">
+					<!-- секция зачем животным пребиотики -->
+					<section class="about position-relative" id="about" name="about">
 						<div class="row mx-0">
 							<div class="col offset-lg-1">
 								<div class="about_wrap">
@@ -120,14 +121,14 @@
 					<section class="first_product_couple position-relative" id="first_product_couple">
 						<div class="antistress">
 							<div class="row m-0">
-								<div class="col offset-1 px-0">
+								<div class="col offset-lg-1 px-0">
 									<div class="row m-0">
-										<div class="col-5 px-0">
+										<div class="col-12 col-lg-5 px-0 d-none d-lg-block">
 											<div class="antistress_img_wrap">
 												<img src="/img/antistress2.png" alt="два товара вэлкопэт для кошек и собак антистресс" class="antistress_img">
 											</div>
 										</div>
-										<div class="col-7 px-0">
+										<div class="col-12 col-lg-7">
 											<div class="antistress_title">
 												<h1>Антистресс</h1>
 												<h3>для кошек и собак</h3>
@@ -152,10 +153,10 @@
 						</div>
 						<div class="kidney">
 							<div class="row m-0 h-100">
-								<div class="col offset-1 px-0">
+								<div class="col offset-lg-1 px-0">
 									<div class="row m-0 h-100">
 
-										<div class="col-6 ps-0 h-100 kidney_content d-flex flex-column align-items-end">
+										<div class="col-12 col-lg-6 ps-0 h-100 kidney_content d-flex flex-column align-items-end">
 											<div class="kidney_title">
 												<h1>здоровые почки</h1>
 												<h3>для кошек</h3>
@@ -172,7 +173,7 @@
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
-										<div class="col-6 px-0 h-100">
+										<div class="col-12 col-lg-6 px-0 h-100 d-none d-lg-block">
 											<div class="kidney_img_wrap">
 												<img src="/img/kidney.png" alt="коробка товара вэлкопэт здоровые почки для кошек" class="kidney_img">
 											</div>
@@ -189,7 +190,7 @@
 							<div class="row m-0">
 								<div class="col px-0">
 									<div class="d-flex">
-										<div class="">
+										<div class="d-none d-lg-block">
 											<div class="skin_img_wrap">
 												<img src="/img/skin.png" alt="два товара вэлкопэт здоровая кожа и блестящая шерсть для собак" class="skin_img">
 											</div>
@@ -220,10 +221,10 @@
 						</div>
 						<div class="joints">
 							<div class="row m-0 h-100">
-								<div class="col offset-1 px-0">
+								<div class="col offset-lg-1 px-0">
 									<div class="row m-0 h-100">
 
-										<div class="col-6 ps-0 h-100 joints_content d-flex flex-column align-items-end">
+										<div class="col-12 col-lg-6 ps-0 h-100 joints_content d-flex flex-column align-items-end">
 											<div class="joints_title">
 												<h1>здоровые суставы</h1>
 												<h3>для собак</h3>
@@ -240,7 +241,7 @@
 														class="fa-solid fa-chevron-down"></i></a>
 											</div>
 										</div>
-										<div class="col-6 px-0 h-100">
+										<div class="col-12 col-lg-6 px-0 h-100 d-none d-lg-block">
 											<div class="joints_img_wrap">
 												<img src="/img/joints.png" alt="коробка товара вэлкопэт здоровые суставы для собак" class="joints_img">
 											</div>
@@ -251,15 +252,107 @@
 							</div>
 						</div>
 					</section>
+					<!-- секция ответы на вопросы -->
+					<section class="answers" id="answers">
+						<div class="row m-0">
+							<div class="col-12 col-lg-6 px-0">
+								<div class="answers_img_wrap w-100">
+									<img src="/img/no.png" alt="заглушка отсутствующего изображения" class="answers_img">
+								</div>
+							</div>
+							<div class="col-12 col-lg-6 px-0">
+								<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+									<div class="carousel-indicators">
+									  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									</div>
+									<div class="carousel-inner">
+									  <div class="carousel-item active">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Почему  пищеварение питомца так важно?</h4>
+												<p>Потому что нормальная работа желудочно-кишечного тракта – это залог всего здоровья организма. Кошки и собаки совсем как люди – страдают от нарушений пищеварения из-за стресса, неполноценного питания или приема антибиотиков. И для скорейшего возврата к нормальной жизни любимца следует позаботиться о быстром восстановлении естественной функциональной микрофлоры кишечника.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Причем тут вообще иммунитет?</h4>
+												<p>А вот причем: более 70% иммунитета обеспечивает здоровый кишечник. Если он работает плохо – еда не усваивается. Недостаток витаминов и минералов, белков и жиров делает животных беззащитными перед инфекциями. Чтобы восстановить иммунную систему, следует помочь организму усваивать все полезные нутриенты из пищи.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Как именно работает Welco?</h4>
+												<p>Лакомство Welco содержит натуральный инновационный пребиотический комплекс FOS+MOS PREBIOTIC FORMULA, который помогает хорошо жить полезным бактериям в кишечнике. Фруктоолигосахариды (FOS)+ маннаолигосахариды (MOS) улучшают пищеварение и адаптивность животных, выводят токсины, а также защищают организм от проникновения патогенных вирусов и микроорганизмов, помогая естественному иммунитету кошек и собак.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Поможет ли Welco, если у моего домашнего животного чувствительное пищеварение?</h4>
+												<p>Да, точно поможет. Ведь в составе лакомства натуральные компоненты, специально подобранные ветеринарными специалистами для бережной заботы о пищеварении таких питомцев и минимизации негативных проявлений работы их особенной пищеварительной системы.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Как понять, что у моего питомца кожа и шерсть, требующие особого внимания?</h4>
+												<p>На самом деле довольно просто: если кожа питомца шелушится, потеряла упругость, а шерсть тусклая и ломкая – вы получили сигнал о помощи. Ведь внешность – это важно, и для животных особенно: это показатель их здоровья.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Почему  пищеварение питомца так важно?</h4>
+												<p>Потому что нормальная работа желудочно-кишечного тракта – это залог всего здоровья организма. Кошки и собаки совсем как люди – страдают от нарушений пищеварения из-за стресса, неполноценного питания или приема антибиотиков. И для скорейшего возврата к нормальной жизни любимца следует позаботиться о быстром восстановлении естественной функциональной микрофлоры кишечника.</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="answers_container">
+											<div class="answers_item">
+												<h4>Не хочу усложнять жизнь себе и питомцу, насколько комфортно мне будет применять такой продукт?</h4>
+												<p>Будет просто и удобно, ведь давать вкусное лакомство кошке или собаке Вам будет только в удовольствие. Которое, тем не менее, поможет четвероногому члену семьи быстро стать здоровым изнутри и красивым снаружи.</p>
+											</div>
+										</div>
+									  </div>
+									  <!-- <div class="carousel-item">
+										<img src="/img/modal-dog.png" class="d-block w-100" alt="...">
+									  </div>
+									  <div class="carousel-item">
+										<img src="..." class="d-block w-100" alt="...">
+									  </div> -->
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+									  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+									  <span class="visually-hidden">Next</span>
+									</button>
+								  </div>
+							</div>
+						</div>
+					
+					</section>
 					<!-- секция как применять -->
 					<section class="how_use position-relative" id="how_use">
 						<div class="row m-0">
-							<div class="col-6 px-0">
+							<div class="col-12 col-lg-6 px-0">
 								<div class="how_use_img_wrap w-100">
 									<img src="/img/how-use.png" alt="ряд из серых паучей с логотипом велкопэт" class="how_use_img w-100 h-100">
 								</div>
 							</div>
-							<div class="col-6 px-0">
+							<div class="col-12 col-lg-6 px-0">
 								<div class="how_use_content">
 									<div class="how_use_title">
 										<h2>как применять welco?</h2>
@@ -292,32 +385,32 @@
 									</div>
 								</div>
 								<div class="row m-0">
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item">
 											4 лапы
 										</h4>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item">
 											Бетховен
 										</h4>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item">
 											КЗВС
 										</h4>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item">
 											магизоо
 										</h4>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item">
 											petshop
 										</h4>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-md-6 col-lg-4">
 										<h4 class="where_bay_item where_bay_item_special">
 											мокрый нос
 										</h4>
@@ -361,19 +454,19 @@
 									</div>
 									<div class="feedback_dropdown_wrap">
 										<div class="row m-0">
-											<div class="col-8">
+											<div class="col-12 col-md-8">
 												<div class="feedback_dropdown">
 													<input type="file" id="dropdown" name="dropdown" accept="image/png, image/jpeg, image/jpg">
 													<img src="/img/Shape.svg" alt="стилизованное синее облако с белой стрелкой внутри">
 													<span class="feedback_dropdown_text">Прикрепить файл в формате JPG. JPEG. PNG</span>
 												</div>
-												<div class="form-check mb-0 d-flex align-items-center">
+												<div class="form-check mb-4 mb-lg-0 d-flex align-items-center">
 													<input class="form-check-input shadow-none mt-0" type="checkbox" value="" id="flexCheckDefault">
 													<label class="form-check-label" for="flexCheckDefault">Принимаю условия <a href="#">Политики конфиденциальности</a></label>
 												</div>
 											</div>
-											<div class="col-4">
-												<div class="d-flex justify-content-end align-items-end h-100 w-100">
+											<div class="col-12 col-md-4">
+												<div class="d-flex justify-content-center justify-content-lg-end align-items-end h-100 w-100">
 													<div class="btn btn-primary">Спросить</div>
 												</div>
 											</div>
@@ -384,10 +477,10 @@
 											<div class="col-12">
 												<div class="d-flex justify-content-center">
 													<div class="social_wrap d-flex justify-content-between">
-														<a href=""><img src="/img/social/vk 2.svg" alt="значок в контакте"></a>
-														<a href=""><img src="/img/social/yout 1.svg" alt="значок ютуба"></a>
-														<a href=""><img src="/img/social/dzen 1.svg" alt="значок яндекс дзен"></a>
-														<a href=""><img src="/img/social/insta 1.svg" alt="значок инстаграма"></a>
+														<a href="#"><img src="/img/social/vk 2.svg" alt="значок в контакте"></a>
+														<a href="#"><img src="/img/social/yout 1.svg" alt="значок ютуба"></a>
+														<a href="#"><img src="/img/social/dzen 1.svg" alt="значок яндекс дзен"></a>
+														<a href="#"><img src="/img/social/insta 1.svg" alt="значок инстаграма"></a>
 													</div>
 												</div>
 											</div>
@@ -418,7 +511,7 @@
 	<footer>
 		<span>Copyright© ООО «Апиценна» 1991-<script>document.write(new Date().getFullYear());</script>. Все права защищены. <a href="">Карта сайта</a>. <a href="">Поисковое продвижение</a>.</span>
 
-<!-- Modal -->
+<!-- Модалка меню -->
 <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="modalMenuLabel" aria-hidden="true">
 	<div class="modal-dialog modal-fullscreen">
 	  <div class="modal-content">
@@ -426,12 +519,13 @@
 		  <div class="row m-0">
 			<div class="col-11 px-0">
 				<div class="row">
-					<div class="col-6"><img src="/img/modal-dog.png" alt="собака лежит на полу и смотрит вверх на логотип вэлкопэт" class="h-100 w-100 modal_menu_img"></div>
+					<div class="col-6"><img src="/img/modal-dog.png" alt="собака лежит на спине и смотрит вверх на логотип вэлкопэт" class="h-100 w-100 modal_menu_img"></div>
 					<div class="col-6">
 						<div class="d-flex justify-content-center">
 							<div class="modal_menu_text">
-								<h3><a href="#about" data-bs-dismiss="modal" id="modal-menu-why">Зачем нужны пребиотики?</a></h3>
+								<h3><a href="#feedback" onClick="$('.modal').modal('hide');" id="modalMenuWhy">Зачем нужны пребиотики?</a></h3>
 								<h3><a data-bs-dismiss="modal" href="#first_product_couple">Продукты</a></h3>
+								<h3><a data-bs-dismiss="modal" href="#answers">Ответы на вопросы</a></h3>
 								<h3><a data-bs-dismiss="modal" href="#how_use">Как применять</a></h3>
 								<h3><a data-bs-dismiss="modal" href="#where_bay">Где купить Welco</a></h3>
 							</div>
@@ -450,6 +544,121 @@
 				</div>
 			</div>
 		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+<!-- Модалка  -->
+<div class="modal fade" id="modalAntistress" tabindex="-1" aria-labelledby="modalAntistressLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-dialog-centered">
+	  <div class="modal-content h-100">
+		<div class="modal-header border-0">
+		<h5 class="modal-title" id="modalAntistressLabel">WELCO АНТИСТРЕСС</h5>
+		<button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+
+			<div class="row m-0">
+				<div class="col-5">
+					<p class="modal-subtitle" id="modalAntistressLabel">для кошек и собак</p>
+					<p class="modalAmount">7шт х 35мл (35г)</p>
+					<div class="modalAntistressImgWrap"><img src="/img/modalAntistress.png" alt="изображение упаковки товара велкопэт" class="modal_antistress_img"></div>
+					<div class="col-7"></div>
+				</div>
+				<div class="col-7">
+					<div class="modalAntistress_content">
+						<div class="modalAntistress_content_composition">
+							<div class="modalAntistress_title">
+								<h6>Состав</h6>
+							</div>
+							<div class="modalAntistress_text">
+								<p>Молоко и молочные продукты, гидролизат куриного белка, экстракт дрожжей, фруктоолигосахариды,  экстракт мелиссы, аминокислоты, клеточные стенки дрожжей (Иммуносан), масло лосося,  ксантановая камедь, агар-агар, витамины и минералы, полисахариды амилозы, карбоксиметилцеллюлоза, вода питьевая.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modalAntistress_content_table">
+						<div class="row">
+							<div class="col modalAntistress_left">
+								<div class="modalAntistress_title">
+									<h6>Добавки</h6>
+								</div>
+									<table class="">
+										<tr>
+										  <th>Витамины</th>
+										</tr>
+										<tr>
+										  <td>Витамин В1</td>
+										  <td>Не менее 0,15 мг</td>
+										</tr>
+										  <tr>
+											<td>Витамин В1</td>
+											<td>Не менее 0,15 мг</td>
+										  </tr>
+										  <tr>
+											<td>Витамин В1</td>
+											<td>Не менее 0,15 мг</td>
+										  </tr>
+										  <tr>
+											<td>Витамин В1</td>
+											<td>Не менее 0,15 мг</td>
+										  </tr>
+									</table>
+									<table class="micro-table">
+										<tr>
+										  <th>Микроэлементы</th>
+										</tr>
+										<tr>
+										  <td>Сульфат меди пентагирдрат</td>
+										  <td>Не менее 0,035 мг</td>
+										</tr>
+										  <tr>
+											<td>Йодит калия</td>
+											<td>Не менее 0,035 мг</td>
+										  </tr>
+									</table>
+							</div>
+							<!-- </div> -->
+							<div class="col-7 modalAntistress_right">
+								<div class="modalAntistress_title">
+									<h6>Питательная ценность</h6>
+								</div>	
+									<table class="nutrition_value_table">
+										<tr>
+										  <th>На 100г продукта</th>
+										</tr>
+										<tr>
+										  <td>Белок</td>
+										  <td>2.3 г</td>
+										</tr>
+										  <tr>
+											<td>Жир</td>
+											<td>2.1</td>
+										  </tr>
+										  <tr>
+											<td>Клетчатка</td>
+											<td>0.5 г</td>
+										  </tr>
+										  <tr>
+											<td>Клетчатка</td>
+											<td>0.5 г</td>
+										  </tr>
+									</table>
+									<table>
+										<tr>
+										  <th>Энергетическая ценность (100 г): 37 ккал/155 кДж</th>
+										</tr>
+									</table>
+								<!-- </div> -->
+							</div>
+							<p class="modalAntistress_bottom_text">
+								Неполнорационный корм (лакомство-пребиотик). Не является лекарственным средством.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
 		</div>
 	  </div>
 	</div>
