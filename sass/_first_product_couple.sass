@@ -3,21 +3,19 @@
     clip-path: polygon(0 0, 100% 0, 100% 41%, 0 99%)
     height: 780px
     margin-bottom: -468px
-
+    padding-top: 64px
     &_img
-        padding-top: 10px
+        // padding-top: 10px
         margin-left: -30px
-        width: 100%
-        &_wrap
-            max-width: 645px
+        // width: 100%
+        // &_wrap
+        //     max-width: 645px
     &_title
         h1
             +whiteTitle
-            margin-top: 58px
-            // margin-left: 10px
+            // margin-top: 58px
         h3
             +whiteh3
-            // margin-left: 10px
     &_text
         +whiteNormalText
         max-width: 624px
@@ -26,17 +24,30 @@
         margin-top: 58px
         a
             color: #a875b9
-
+@media screen and (max-width: 425px)
+    .antistress
+        &_text
+            font-size: 16px
+@media screen and (max-width: 1024px)
+    .antistress
+        padding-top: 10px
+        &_title
+            h1
+                margin-top: 30px
+        &_text
+            font-size: 20px
+        &_img
+            margin-left: 0
 .kidney
     background: radial-gradient(31.46% 31.46% at 69.06% 36.18%, #0C8583 0%, #045E5C 100%)
     clip-path: polygon(0 52%, 100% 0%, 100% 100%, 0% 100%)
     height: 879px
     &_img
         margin-top: 172px
-        margin-left: 20px
-        width: 100%
-        &_wrap
-            max-width: 614px
+        // margin-left: 20px
+        // img
+        //     width: 100%
+        //     max-width: 614px
     &_title
         margin-top: 372px
         margin-left: 110px
@@ -63,3 +74,21 @@
         position: absolute
         left: 52%
         bottom: 0px
+
+@media screen and (max-width: 425px)
+    .kidney
+        &_text
+            font-size: 16px
+@media screen and (max-width: 1024px)
+    .kidney
+        padding-top: 10px
+        &_text
+            font-size: 20px
+        &_title
+            margin-top: 310px
+@media screen and (max-width: 1440px)
+    .kidney
+        &_img_wrap
+            img
+                max-width: 400px             
+                margin-left: 0

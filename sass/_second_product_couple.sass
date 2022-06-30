@@ -3,21 +3,20 @@
     clip-path: polygon(0 0, 100% 0, 100% 46%, 0 99%)
     height: 869px
     margin-bottom: -470px
-
-    &_img
-        padding-top: 122px
-        // margin-left: 17px
-        width: 100%
-        &_wrap
-            // max-width: 645px
+    padding-top: 64px
+    // &_img
+    //     margin-top: 122px
+        // width: 100%
+        // height: 100%
+        // max-width: 604px
+        // max-height: 470px
+        // object-fit: contain
     &_title
         h1
             +whiteTitle
-            margin-top: 59px
-            // margin-left: 10px
+            // margin-top: 59px
         h3
             +whiteh3
-            // margin-left: 10px
             margin-top: 16px
     &_text
         +whiteNormalText
@@ -30,44 +29,46 @@
     &_contain
         padding-left: 3%    
 
+@media screen and (max-width: 425px)
+    .skin
+        &_text
+            font-size: 16px
+@media screen and (max-width: 1024px)
+    .skin
+        padding-top: 10px
+        &_text
+            font-size: 20px
+        &_img
+            margin-left: 0
 .joints
     background: radial-gradient(80.49% 64.27% at 68.37% 24.76%, #00722C 0%, #28B35D 100%) 
     clip-path: polygon(0 49%, 100% 0%, 100% 100%, 0% 100%)
     height: 939px
-    // margin-top: -609px
     &_img
         margin-top: 284px
-        margin-left: 150px
-        width: 100%
-        &_wrap
-            max-width: 494px
+        // margin-left: 150px
+        // width: 100%
+        // max-width: 494px
+        // &_wrap
+        //     img
     &_title
         margin-top: 412px
-        // max-width: 620px
-        // margin-left: 112px
         text-align: end
-        // padding-right: 67px
-
         h1
             +whiteTitle
             margin-top: 58px
-            // margin-left: 10px
         h3
             +whiteh3
-            // margin-left: 10px
-
     &_text
         +whiteNormalText
         margin-top: 33px
         text-align: end
         max-width: 717px
-        // margin-left: 262px
     &_content
         padding-right: 67px
 
     .round_links
         margin-top: 40px
-
         a
             color: #0C8583
 .second_product_couple
@@ -75,3 +76,21 @@
         position: absolute
         left: 52%
         bottom: 0px
+
+@media screen and (max-width: 425px)
+    .joints
+        &_text
+            font-size: 16px
+@media screen and (max-width: 1024px)
+    .joints
+        padding-top: 10px
+        &_text
+            font-size: 20px
+        &_title
+            margin-top: 310px
+@media screen and (max-width: 1440px)
+    .joints
+        &_img_wrap
+            img
+                max-width: 400px                
+                margin-left: 0        

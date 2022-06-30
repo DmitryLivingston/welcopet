@@ -15,7 +15,11 @@
         +normalText
     &_button
         &_block
-            max-width: 350px
+            max-width: 494px
+            margin-bottom: 27px
+            flex-wrap: wrap
+            img
+                width: 161px
     &_img
         position: relative
     &_bg_img
@@ -37,21 +41,34 @@
         font-size: 28px
         line-height: 100%
         text-transform: uppercase
-        color: rgba(9, 10, 41, 0.36)
+        // color: rgba(9, 10, 41, 0.36)
+        color: rgba(234, 234, 234, 0.57)
     &_btn_violet
         background-color: $violet
         border-radius: 46px
         color: $white
         font-family: $primeFont, sans-serif
         font-style: normal
-        font-weight: 400
-        font-size: 18px
-        line-height: 22px
-        padding: 14px 26px
-    &_button_block
-        margin-bottom: 27px
-        flex-wrap: wrap
+        font-weight: 700
+        font-size: 36px
+        line-height: 44px
+        // padding: 14px 26px
+        width: 297px
+        height: 84px
+        display: flex
+        align-items: center
+        justify-content: center
     .scroll-button
         position: absolute
         left: 49%
         bottom: 0
+// @media screen and (max-width: 425px)
+//     .antistress
+//         &_text
+//             font-size: 16px
+@media screen and (max-width: 1024px)
+    .prime
+        &_text
+            font-size: 20px
+        &_left_side
+            padding-top: 30px    
