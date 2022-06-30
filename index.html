@@ -32,9 +32,9 @@
 					<!-- первый экран -->
 					<section class="prime position-relative">
 						<div class="row m-0">
-							<div class="col-12 col-xl-5 offset-xl-1 px-3">
+							<div class="col-12 col-xl-5 offset-xl-1 px-3 order-2 order-md-1">
 								<div class="prime_left_side">
-									<div class="prime_logo">
+									<div class="prime_logo d-none d-md-block">
 										<img class="prime_logo-img" src="/img/welco_logo 1.png" alt="логотип компании вэлкопэт">
 									</div>
 									<div class="prime_title">
@@ -56,17 +56,20 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-xl-6 px-0">
+							<div class="col-12 col-xl-6 px-0 order-1 order-md-2">
 								<div class="prime_right_side h-100">
 									<div class="prime_img h-100">
 										<img src="/img/Prime.png" alt="изображение двух пачек товара велкопэт для кошек и собак на оранжевом фоне" class="prime_bg_img">
 										<!-- <img src="/img/prime-text.png" alt="текст-подпись к изображению товаров неполноценный корм лакомство пребиотик не является лекарственным средством" class="prime_text_img d-none d-lg-block"> -->
+										<div class="prime_logo d-block d-md-none position-absolute">
+											<img class="prime_logo-img mobile_logo" src="/img/welco_logo 1.png" alt="логотип компании вэлкопэт">
+										</div>
 										<span class="prime_img_text">Неполнорационный корм (лакомство-пребиотик). не является лекарственным средством.</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="scroll-button">
+						<div class="scroll-button d-none d-md-block">
 							<a href="#about" id="about-scroll-btn"><img src="/img/chevron down.png" alt="кнопка листать вниз"></a>
 						</div>
 					</section>
@@ -76,7 +79,7 @@
 							<div class="col offset-xl-1">
 								<div class="about_wrap">
 									<div class="row mx-0">
-										<div class="col col-lg-5 px-0">
+										<div class="col col-lg-5 px-0 order-2 order-md-1">
 											<div class="about_left_side">
 												<div class="about_title">
 													<h2>Зачем животным <span class="orange">пребиотики?</span></h2>
@@ -110,7 +113,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-12 col-lg-7 px-0 d-flex align-items-center justify-content-center">
+										<div class="col-12 col-lg-7 px-0 order-1 order-md-2 d-flex align-items-center justify-content-center">
 											<div class="about_img_wrap">
 												<img src="/img/why-need-dog.png" alt="фотография корги">
 											</div>
@@ -128,23 +131,37 @@
 							<div class="row m-0">
 								<div class="col offset-xl-1 px-0">
 									<div class="row m-0">
-										<div class="col-5 px-0">
+										<div class="col-12 col-md-5 px-0 order-2 order-md-1">
 											<div class="antistress_img_wrap">
 												<img src="/img/antistress.png" alt="два товара вэлкопэт для кошек и собак антистресс" class="antistress_img product_img">
 											</div>
+											<div class="col-12 col-7 order-1 order-md-2 d-flex d-md-none flex-column justify-content-center align-items-center">
+												<p class="antistress_text">
+													Содержит витамины группы В и целебный экстракт мелиссы, которые
+													обеспечивают снижение уровня стресса и помогают животным стать спокойнее
+													и счастливее.
+												</p>
+												<!-- кнопки -->
+												<div class="round_links d-flex justify-content-between">
+													<a href="#where_bay" class="round_button">где <br> купить <br><i
+														class="fa-solid fa-chevron-down"></i></a>
+													<a href="" class="round_button pt-2">состав <br><i
+															class="fa-solid fa-plus"></i> </a>
+												</div>
+											</div>
 										</div>
-										<div class="col-7">
+										<div class="col col-7 order-1 order-md-2">
 											<div class="antistress_title">
 												<h1>Антистресс</h1>
 												<h3>для кошек и собак</h3>
 											</div>
-											<p class="antistress_text">
+											<p class="antistress_text d-none d-md-block">
 												Содержит витамины группы В и целебный экстракт мелиссы, которые
 												обеспечивают снижение уровня стресса и помогают животным стать спокойнее
 												и счастливее.
 											</p>
 											<!-- кнопки -->
-											<div class="round_links d-flex justify-content-between">
+											<div class="round_links justify-content-between d-none d-md-flex">
 												<a href="" class="round_button pt-2">состав <br><i
 														class="fa-solid fa-plus"></i> </a>
 												<a href="#where_bay" class="round_button">где <br> купить <br><i
